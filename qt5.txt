@@ -1,0 +1,26 @@
+from PyQt5 import QtWidgets
+from PyQt5.QtWidgets import QApplication, QMainWindow
+import sys
+
+def window():
+	app = QApplication(sys.argv)
+	win = QMainWindow()
+	xpos = 100
+	ypos = 100
+	width = 1200
+	height = 600
+	
+	label = QtWidgets.QLabel(win)
+	label.setText("First Label")
+	label.move(50,50)
+	
+
+	
+	win.setGeometry(xpos, ypos, width, height )
+	win.setWindowTitle("Wurk  Wurk Wuk")
+	
+	win.show()
+	sys.exit(app.exec_())
+
+window()	
+
